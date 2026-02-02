@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://maven-db:3306/authgetway
+    username: auth
+    password: auth
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: "Fix my City"
+
+
+security:
+  jwt:
+    public-key-url: http://maven-app:8080/jwt/public_key
